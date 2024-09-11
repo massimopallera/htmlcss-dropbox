@@ -347,6 +347,7 @@ main{
      }
 
      #companies{
+         margin-bottom:-1rem;
         .square{
             width: 100%;
             aspect-ratio: 1;
@@ -368,7 +369,35 @@ main{
                 background: green;
                 border: 1rem solid black;
             }
-            
+            &#florida-uni{
+                background: #000;
+
+            }
+        }
+        .col-12{
+            margin-top: -1rem;
+            background-color: var(--hero-bg);
+            .card{
+                display: flex;
+                justify-content: space-between;
+                padding: 3rem 0;
+                margin-bottom: 3rem;
+                .left{
+                    width: 50%;
+                }
+                .right{
+                    /* padding: 2rem; */
+                    width: 50%;
+                    text-align: right;
+                    button{
+                        padding: .5rem .75rem;
+                    }
+                }
+                h2{
+                    font-size: 2rem;
+                    padding: 0;
+                }
+            }
         }
      }
      margin-bottom: 50rem;
