@@ -176,7 +176,6 @@ main{
 
         .card 
         {
-            /* background: var(); */
             .account-type{
                 text-align: center;
                 padding: .5rem;
@@ -221,6 +220,28 @@ main{
                 }
             }
 
+            .container{
+                width: 90%;
+                /* margin-left: 0; */
+                /* margin-bottom: 1.5rem; */
+                .free-trial{
+                    width: 100%;
+                    padding: .5rem 0;
+                    background-color: var(--btn-color);
+                    color: var(--lighter);
+                    border: 1px solid var(--btn-color);
+                }
+            }
+            .buy-now{
+                margin: 1.5rem 0;
+                a{
+                    color: var(--btn-color);
+                }
+            }
+            .divider{
+                width: 2.5rem;
+                border: .5px solid var(--light);
+            }
             
 
         }
