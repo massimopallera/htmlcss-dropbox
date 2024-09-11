@@ -72,9 +72,10 @@ img{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
-div[class^="col-"]{
+[class^="col-"]{
     padding: .5rem;
 }
 
@@ -96,6 +97,7 @@ div[class^="col-"]{
 
 header{
     position: sticky;
+    z-index: 1000;
     top: 0;
     left: 0;
     background: var(--lighter);
@@ -172,7 +174,7 @@ main{
     }
 
      #business-plans{
-        margin-top: 9rem;
+        margin-top: 15rem;
         ul{
             /* list-style: none; */
             padding-left: 2rem;
@@ -184,13 +186,18 @@ main{
 
         .card 
         {
+            border-right: 1px solid rgba(0,0,0,0.2);
+            border-left: 1px solid rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(0,0,0,0.2);
+            border-bottom: 2px solid rgba(0,0,0,0.2);
             .account-type{
                 text-align: center;
                 padding: .5rem;
-                border-bottom: 1px solid var(--light);
-                border-top: 1px solid var(--light);
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+                /* border-top: 1px solid var(--light); */
             }
             .plan-type{
+                margin-top: 1rem;
                 .plan-price{
                     padding: .5rem 0;
                     font-weight: 900;
@@ -222,7 +229,6 @@ main{
                         /* list-style-position: inside; */
                     }
             }
-
             .container{
                 width: 90%;
                 /* margin-left: 0; */
@@ -243,15 +249,47 @@ main{
             }
             .divider{
                 width: 2.5rem;
-                border: .5px solid var(--light);
+                border: .5px solid rgba(0,0,0,0.2);
             }
             .highlight-points{
-                margin-top: 2rem;
+                margin: 2rem 0 4rem;
                 li{
                     list-style-image: url("../../check-solid (1).svg");
                 }
             }
+        }
 
+        .col-12 .card{
+            .container{
+                display: flex;
+                justify-content: space-between;
+                padding: 2rem 0;
+            }
+            .left{
+                width: 60%;
+                .plan-type{
+                    margin-top: 1rem;
+                }.contact-us{
+                    padding: .5rem 0;
+                    font-weight: 900;
+                    margin-bottom: 2rem;
+                }
+                h3{
+
+                    font-size: 1.5rem;
+                    padding-bottom: .5rem;
+                }
+                }
+            .right{
+                text-align: end;
+                width: 20%;
+                button{
+                    padding: .5rem .75rem;
+                    background-color: var(--btn-color);
+                    color: var(--lighter);
+                    border: 1px solid var(--btn-color);
+                }
+            }
         }
      } 
 
