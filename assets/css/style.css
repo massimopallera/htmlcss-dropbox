@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1440px;
+}
+
+/* #region debug */
+.debug{
+    *{
+        border: 1px dashed black;
+    }
+}
+/* #endregion debug */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.container-sm{
+    width: 60%;
+    margin: auto;
+}
+
+.left{
+    text-align: left;
+    padding: .5rem;
+}
+.right{
+    text-align: right;
+    padding: .5rem;
+}
+
+div[class^="col-"]{
+    padding: .5rem;
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+.col-8{
+    width: calc((100% / 12) * 8 );
+}
+.col-12{
+    width: 100%;
+}
