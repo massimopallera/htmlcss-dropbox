@@ -43,7 +43,7 @@ img{
     } */
     .hero{
         background: var(--hero-bg);
-        min-height: 50vh;
+        /* min-height: 50vh; */
     }
     .container{
         background: rgba(255, 166, 0, 0.705);
@@ -87,6 +87,12 @@ div[class^="col-"]{
 .col-12{
     width: 100%;
 }
+.cta{
+    padding: .25rem .7rem;
+    background: var(--btn-color);
+    color: var(--lighter);
+    border: 1px solid var(--btn-color);
+}
 
 header{
     position: sticky;
@@ -108,12 +114,6 @@ header{
         > *:not(.logo,.cta){
             padding: .75rem;
         } 
-        .cta{
-            padding: .25rem .7rem;
-            background: var(--btn-color);
-            color: var(--lighter);
-            border: 1px solid var(--btn-color);
-        }
     }
     .left{
         text-align: left;
@@ -146,8 +146,21 @@ main{
         font-size: 4rem;
         padding: 3rem 0;
     }
-    .hero-desc{}
-    .hero-img{
-        /* padding: .5rem; */
+    .hero-desc{
+        > *{
+            margin: 2rem 0;
+        }
+        a > i{
+            margin-bottom: 0;
+            color: var(--dark);
+            font-size: 3rem;
+        }
+        .hero-p{
+            margin-top: 0;
+        }
+        .cta{
+            padding:.75rem
+        }
     }
+
 }
