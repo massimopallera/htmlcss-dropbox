@@ -135,43 +135,71 @@ header{
 
 }
 
-.card{
-    /* position: relative; */
-}
+
 /* main */
 main{
     .hero{
         background: var(--hero-bg);
         padding: 4rem 0 0;
         /* margin-bottom: -1rem; */
-    }
-    .hero-title{
-        font-size: 4rem;
-        padding: 3rem 0;
-    }
-    .hero-desc{
-        > *{
-            margin: 2rem 0;
+        .hero-title{
+            font-size: 4rem;
+            padding: 3rem 0;
         }
-        a > i{
-            margin-top: 1rem;
-            margin-bottom: 0;
-            color: var(--dark);
-            font-size: 3rem;
+        .hero-desc{
+            > *{
+                margin: 2rem 0;
+            }
+            a > i{
+                margin-top: 1rem;
+                margin-bottom: 0;
+                color: var(--dark);
+                font-size: 3rem;
+            }
+            .hero-p{
+                margin-top: 0;
+            }
+            .cta{
+                padding:.75rem
+            }
         }
-        .hero-p{
-            margin-top: 0;
-        }
-        .cta{
-            padding:.75rem
+        .hero-img{
+            position: relative;
+            img{
+                position: absolute;
+            }
         }
     }
 
-    .hero-img{
-        position: relative;
-        img{
-            position: absolute;
+     #business-plans{
+        margin-top: 9rem;
+
+        .card 
+        {
+            /* background: var(); */
+            .account-type{
+                text-align: center;
+                padding: .5rem;
+                border-bottom: 1px solid var(--light);
+                border-top: 1px solid var(--light);
+            }
+            .plan-type{
+                .plan-price{
+                    padding: .5rem 0;
+                    font-weight: 900;
+                }
+
+                h3{
+
+                    font-size: 1.5rem;
+                    padding-bottom: .5rem;
+                }
+                .monthly-plan{
+                    color: var(--light);
+                }
+            }
+
         }
-    }
+     } 
 
 }
