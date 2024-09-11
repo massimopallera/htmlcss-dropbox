@@ -173,6 +173,14 @@ main{
 
      #business-plans{
         margin-top: 9rem;
+        ul{
+            /* list-style: none; */
+            padding-left: 2rem;
+            li{
+                margin: .5rem 0;
+                line-height: 1rem;
+            }
+        }
 
         .card 
         {
@@ -199,9 +207,8 @@ main{
             }
             .service{
                 margin: 3rem 0;
-                ul{
-                    list-style: none;
-                    padding-left: 2rem;
+                
+                    
                     .usr-icon{
                         list-style-image:url("../../user-solid (1).svg");
                         /* list-style-position: inside; */
@@ -214,10 +221,6 @@ main{
                         list-style-image:url("../../share-nodes-solid (2).svg");
                         /* list-style-position: inside; */
                     }
-                    li{
-                        margin: .5rem 0;
-                    }
-                }
             }
 
             .container{
@@ -242,7 +245,12 @@ main{
                 width: 2.5rem;
                 border: .5px solid var(--light);
             }
-            
+            .highlight-points{
+                margin-top: 2rem;
+                li{
+                    list-style-image: url("../../check-solid (1).svg");
+                }
+            }
 
         }
      } 
