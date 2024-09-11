@@ -135,6 +135,9 @@ header{
 
 }
 
+.card{
+    /* position: relative; */
+}
 /* main */
 main{
     .hero{
@@ -151,6 +154,7 @@ main{
             margin: 2rem 0;
         }
         a > i{
+            margin-top: 1rem;
             margin-bottom: 0;
             color: var(--dark);
             font-size: 3rem;
@@ -160,6 +164,13 @@ main{
         }
         .cta{
             padding:.75rem
+        }
+    }
+
+    .hero-img{
+        position: relative;
+        img{
+            position: absolute;
         }
     }
 
