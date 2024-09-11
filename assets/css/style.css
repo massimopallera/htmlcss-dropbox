@@ -23,10 +23,10 @@ img{
 
 /* #region debug */
 .debug{
-    *{
+    *:not(header *){
         border: 1px dashed black;
     }
-    header{
+    /* header{
         background-color: cadetblue;
     }
     .left{
@@ -40,6 +40,19 @@ img{
     }
     .cta{
         background: red;
+    } */
+    .hero{
+        background: var(--hero-bg);
+        min-height: 50vh;
+    }
+    .container{
+        background: rgba(255, 166, 0, 0.705);
+    }
+    .row{
+        background: rgba(255, 90, 247, 0.705);
+    }
+    .col-4,.col-8{
+        background: rgba(118, 150, 255, 0.705);
     }
 }
 /* #endregion debug */
@@ -54,6 +67,10 @@ img{
 }
 
 .d-flex{
+    display: flex;
+}
+
+.row{
     display: flex;
 }
 
@@ -116,4 +133,21 @@ header{
         }
     }
 
+}
+
+/* main */
+main{
+    .hero{
+        background: var(--hero-bg);
+        padding: 4rem 0 0;
+        /* margin-bottom: -1rem; */
+    }
+    .hero-title{
+        font-size: 4rem;
+        padding: 3rem 0;
+    }
+    .hero-desc{}
+    .hero-img{
+        /* padding: .5rem; */
+    }
 }
