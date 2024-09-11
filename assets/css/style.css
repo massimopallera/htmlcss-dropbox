@@ -198,6 +198,30 @@ main{
                     color: var(--light);
                 }
             }
+            .service{
+                margin: 3rem 0;
+                ul{
+                    list-style: none;
+                    padding-left: 2rem;
+                    .usr-icon{
+                        list-style-image:url("../../user-solid (1).svg");
+                        /* list-style-position: inside; */
+                    }
+                    .fldr-icon{
+                        list-style-image:url("../../folder-solid (1).svg");
+                        /* list-style-position: inside; */
+                    }
+                    .share-icon{
+                        list-style-image:url("../../share-nodes-solid (2).svg");
+                        /* list-style-position: inside; */
+                    }
+                    li{
+                        margin: .5rem 0;
+                    }
+                }
+            }
+
+            
 
         }
      } 
