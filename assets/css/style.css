@@ -73,6 +73,7 @@ img{
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -.5rem;
 }
 
 [class^="col-"]{
@@ -140,6 +141,11 @@ header{
 
 /* main */
 main{
+
+    >*:not(:first-child){
+        margin-top: 15rem;
+    }
+
     .hero{
         background: var(--hero-bg);
         padding: 4rem 0 0;
@@ -172,9 +178,9 @@ main{
             }
         }
     }
+    
 
      #business-plans{
-        margin-top: 15rem;
         ul{
             /* list-style: none; */
             padding-left: 2rem;
@@ -293,4 +299,27 @@ main{
         }
      } 
 
+     #db-partner{
+        .col-4{
+            .card{
+                height: 100%;
+                padding: 3rem .5rem;
+                h3{
+                    line-height: 1.7rem;
+                    font-size: 1.5rem;
+                }
+                p{
+                    padding: 1rem 0;
+                }
+                button{
+                    margin-top: 1rem;
+                    padding: .5rem .75rem;
+                    border: 1px solid black;
+                    background: white;
+                }
+            }
+        }
+     }
+     margin-bottom: 50rem;
 }
+
