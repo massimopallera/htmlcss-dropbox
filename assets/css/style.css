@@ -54,6 +54,9 @@ img{
     .col-4,.col-8{
         background: rgba(118, 150, 255, 0.705);
     }
+    .question{
+        background: #0000001f;
+    }
 }
 /* #endregion debug */
 
@@ -398,6 +401,41 @@ main{
                     padding: 0;
                 }
             }
+        }
+     }
+
+     #questions{
+        h2{
+            font-size: 2rem;
+            padding: 3rem 0;
+            border-bottom: 1px solid black ;
+        }
+        .left, .right{
+            font-size: 1.5rem;
+        }
+        .question{
+            border-bottom: 1px solid black ;
+            padding: 3rem 0;
+        }
+        .question{
+            /* padding: 2rem 0; */
+        }
+        .hidden{
+             display: none;
+         }
+        .question:hover {
+            .hidden{
+                padding: 2rem 0;
+                display: block;
+            }
+            .right{
+                rotate: 180deg;
+            }
+        }
+            
+        .right{
+            float: right;
+            margin-right: 1rem;
         }
      }
      margin-bottom: 50rem;
