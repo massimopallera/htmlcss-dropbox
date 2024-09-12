@@ -383,8 +383,7 @@ main{
             .card{
                 display: flex;
                 justify-content: space-between;
-                padding: 3rem 0;
-                margin-bottom: 3rem;
+                padding: 6rem 0;
                 .left{
                     width: 50%;
                 }
@@ -441,3 +440,32 @@ main{
      margin-bottom: 50rem;
 }
 
+/* footer */
+footer{
+    background: #000;
+    .row{
+        margin: 0;
+        justify-content: space-between;
+    }
+    h4{
+        padding: 1rem 0;
+        color: white;
+    }
+    .card{
+        padding: 3rem 0;
+    }
+    ul{
+        list-style: none;
+        li{
+            padding: .5rem 0;            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        } 
+    }
+    .language{
+        color: white;
+        padding: 3rem 0;
+    }
+}
