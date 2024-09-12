@@ -22,13 +22,15 @@ img{
     --company-color-designit: #a2d39b ;
     --company-border-color-designit: #d1e9cd ;
     --company-color-florida: #0093ce ;
-    --company-color-asu: #0093ce;
+    --company-color-asu: #61082b;
     --company-color-topps: #ff1c1c;
     --company-color-wbr: #d5001f;
     --company-color-lonely-planet: #0d2481 ;
     --company-color-hearst: #b4d0e7 ;
     --company-color-clear-channel: #ffd830;
+    --company-big-sq: #f5f5f5;
 
+    /* --company-bottom-text: #61082b; */
     --dark: #000;
     --lighter: #fff;
     --light: #696969;
@@ -249,8 +251,6 @@ main{
             }
         }
     }
-    
-
     #business-plans{
         ul{
             padding-left: 2rem;
@@ -342,7 +342,6 @@ main{
             }
         }
     } 
-
     #db-partner{
     .col-4{
         .card{
@@ -357,7 +356,6 @@ main{
         }
     }
     }
-
     #db-business{
         .col-4{
             padding-left: 0;
@@ -373,14 +371,13 @@ main{
             }
         }
     }
-
     #team-on-dbb{
         .container-sm{
             padding-right: 15rem;
         }
         p{
             font-size: 3rem;
-            font-weight: 900;
+            font-weight: 700;
             padding: 5rem 0;
         }
         a{
@@ -388,59 +385,106 @@ main{
         }
     }
 
-    #companies{
-        margin-bottom:-1rem;
-    .square{
-        width: 100%;
-        aspect-ratio: 1;
-        padding: 1rem;
-        .container{
-            position: relative;
-            width: 80%;
-            height: 100%;
-            margin: auto;
-            /* background: transparent; */
-        }
-        .company{
-            position: absolute;
-            top:50%;
-            left:0;
-            transform: translate(0,-50%);
-        }
-        &#designit{
-            background: green;
-            border: 1rem solid black;
-        }
-        &#florida-uni{
-            background: #000;
 
+    #companies{
+
+        .col-2,.col-4{
+            padding: 0;
         }
-    }
-    .col-12{
-        margin-top: -1rem;
-        background-color: var(--hero-bg);
+        margin-bottom:-1rem;
+        .square{
+            img{
+                filter:invert(1);
+            }
+            width: 100%;
+            aspect-ratio: 1;
+            padding: 1rem;
+            /* margin: 0; */
+            .container{
+                position: relative;
+                width: 80%;
+                height: 100%;
+                margin: auto;
+            }
+            .company{
+                position: absolute;
+                top:50%;
+                left:0;
+                transform: translate(0,-50%);
+            }
+            &#designit{
+                background: var(--company-color-designit);
+                border: 1rem solid var(--company-border-color-designit);
+            }
+            &#florida-uni{
+                background: var(--company-color-florida);
+            }
+            &#asu{
+                background: var(--company-color-asu);
+            }
+            &#topps{
+                background: var(--company-color-topps);
+            }
+            &#wbr{
+                background: var(--company-color-wbr);
+            }
+            &#planet{
+                background: var(--company-color-lonely-planet);
+            }
+            &#hearst{
+                background: var(--company-color-hearst);
+            }
+            &#clear-ch{
+                background: var(--company-color-clear-channel);
+            }
+            /* color: white; */
+        }
         .card{
-            display: flex;
-            justify-content: space-between;
-            padding: 6rem 0;
-            .left{
+            height: 100%;
+        }
+        .big-sq{
+            height: 100%;
+            background: var(--company-big-sq);
+            padding: 3rem;
+
+            .img-big{
                 width: 50%;
             }
-            .right{
-                /* padding: 2rem; */
-                width: 50%;
-                text-align: right;
-                button{
-                    padding: .5rem .75rem;
-                }
+            .divider{
+                width: 20%;
+                margin: 3rem 0;
             }
-            /* h2{
-                font-size: 2rem;
+            .author{
+                margin-top: 2.5rem;
+            }
+        }
+        .col-12{
+            .d-flex{
+                align-items: start;
+                /* align-items: center; */
+                vertical-align: middle;
+            }    
+            h2,button{
                 padding: 0;
-            } */
+            }
+            h2{
+                padding-right: 10rem;
+            }
+
+            margin-top: -1rem;
+            background-color: var(--hero-bg);
+            color: var(--company-color-asu);
+            padding: 6rem 0;
+            /* width: 50%; */
+            /* margin: auto; */
+            button{
+                padding: .5rem 5rem;
+                color: var(--company-color-asu);
+            }    
+                    
         }
     }
-    }
+
 
     #questions{
     
@@ -491,7 +535,7 @@ footer{
     }
     .language{
         border-top: 1px solid white;
-        color: white;
+        color: rgba(255, 255, 255, 0.534);
         padding: 3rem 0 0;
     }
     padding-bottom: 3rem;
