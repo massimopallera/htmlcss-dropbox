@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* font-family */
+    font-family: "Schibsted Grotesk", sans-serif;
 }
 
 body{
-    min-width: 1440px;
+    min-width: 1000px;
 }
 img{
     max-width: 100%;
@@ -15,6 +18,16 @@ img{
 :root{
     --hero-bg: #b4d0e7;
     --btn-color: #0061ff;
+
+    --company-color-designit: #a2d39b ;
+    --company-border-color-designit: #d1e9cd ;
+    --company-color-florida: #0093ce ;
+    --company-color-asu: #0093ce;
+    --company-color-topps: #ff1c1c;
+    --company-color-wbr: #d5001f;
+    --company-color-lonely-planet: #0d2481 ;
+    --company-color-hearst: #b4d0e7 ;
+    --company-color-clear-channel: #ffd830;
 
     --dark: #000;
     --lighter: #fff;
@@ -61,7 +74,7 @@ img{
 /* #endregion debug */
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 .container-sm{
