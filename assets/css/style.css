@@ -127,12 +127,6 @@ img{
 .col-2{
     width: calc((100% / 12) * 2 );
 }
-/* .cta{
-    padding: .25rem .7rem;
-    background: var(--btn-color);
-    color: var(--lighter);
-} */
-/* #ennregion utilities */
 
 .left{
     text-align: left;
@@ -140,7 +134,15 @@ img{
 .right{
     text-align: right;
 }
+/* .cta{
+    padding: .25rem .7rem;
+    background: var(--btn-color);
+    color: var(--lighter);
+} */
+/* #ennregion utilities */
 
+
+/* header */
 header{
     position: sticky;
     z-index: 1000;
@@ -170,6 +172,36 @@ header{
 
 }
 
+/* new */
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.font-3{
+    font-size: 3rem;
+}
+.font-2{
+    font-size: 2rem;
+}
+.font-1, p{
+    font-size: 1.1rem;
+}
+
+.dark{
+    color: var(--dark);
+}
+.lighter{
+    color: var(--lighter);
+}
+.light{
+    color: var(--light);
+}
+.bg-primary{
+    background: var(--hero-bg);
+}
+
+
+
 /* main */
 main{
 
@@ -177,35 +209,25 @@ main{
         margin-top: 15rem;
     }
 
-    .hero{
-        background: var(--hero-bg);
+    #hero{
         padding: 4rem 0 0;
-        /* margin-bottom: -1rem; */
         .hero-title{
-            font-size: 4rem;
             padding: 3rem 0;
         }
         .hero-desc{
             > *{
                 margin: 2rem 0;
             }
-            a > i{
-                margin-top: 1rem;
-                margin-bottom: 0;
-                color: var(--dark);
-                font-size: 3rem;
-            }
-            .hero-p{
+            p:first-child{
                 margin-top: 0;
-            }
-            .cta{
-                padding:.75rem
             }
         }
         .hero-img{
             position: relative;
             img{
                 position: absolute;
+                top: 0;
+                left:0;
             }
         }
     }
