@@ -436,14 +436,14 @@ main{
             float: right;
             margin-right: 1rem;
         }
+        margin-bottom: 20rem;
      }
-     margin-bottom: 50rem;
 }
 
 /* footer */
 footer{
     background: #000;
-    .row{
+    .d-flex{
         margin: 0;
         justify-content: space-between;
     }
@@ -464,8 +464,13 @@ footer{
             }
         } 
     }
-    .language{
-        color: white;
-        padding: 3rem 0;
+    .mt-3{
+        margin-top: 3rem;
     }
+    .language{
+        border-top: 1px solid white;
+        color: white;
+        padding: 3rem 0 0;
+    }
+    padding-bottom: 3rem;
 }
