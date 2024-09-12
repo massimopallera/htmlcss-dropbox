@@ -151,13 +151,8 @@ header{
     background: var(--lighter);
     padding: 0 1rem;
     ul{
-        list-style: none;
-        display: flex;
         gap: 1rem;
-        a{
-            text-decoration: none;
-            color: var(--light);
-        }
+
     }
     .d-flex{
         align-items: center;
@@ -176,6 +171,24 @@ header{
 h1{
     font-size: 4rem;
     font-weight: 800;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 4rem 0;
+}
+h3{
+    font-size: 1.5rem;
+}
+li{
+    padding: .5rem 0;
+}
+ul{
+    list-style: none;
+}
+
+.txt-none{
+    text-decoration: none;
 }
 .font-3{
     font-size: 3rem;
@@ -199,7 +212,12 @@ h1{
 .bg-primary{
     background: var(--hero-bg);
 }
-
+.bd-b{
+    border-bottom: 1px solid black ;
+}
+.mt-2{
+    margin-top: 2rem; 
+}
 
 
 /* main */
@@ -233,65 +251,47 @@ main{
     }
     
 
-     #business-plans{
+    #business-plans{
         ul{
-            /* list-style: none; */
             padding-left: 2rem;
-            li{
-                margin: .5rem 0;
-                line-height: 1rem;
-            }
         }
 
         .card 
         {
+            padding: 1rem;
             border-right: 1px solid rgba(0,0,0,0.2);
             border-left: 1px solid rgba(0,0,0,0.2);
             border-top: 1px solid rgba(0,0,0,0.2);
             border-bottom: 2px solid rgba(0,0,0,0.2);
             .account-type{
                 text-align: center;
-                padding: .5rem;
                 border-bottom: 1px solid rgba(0,0,0,0.2);
-                /* border-top: 1px solid var(--light); */
             }
+
             .plan-type{
-                margin-top: 1rem;
-                .plan-price{
-                    padding: .5rem 0;
-                    font-weight: 900;
-                }
-
                 h3{
-
-                    font-size: 1.5rem;
                     padding-bottom: .5rem;
                 }
-                .monthly-plan{
-                    color: var(--light);
+                .plan-price{
+                    font-weight: 900;
                 }
             }
             .service{
                 margin: 3rem 0;
-                
-                    
                     .usr-icon{
                         list-style-image:url("../../user-solid (1).svg");
-                        /* list-style-position: inside; */
                     }
                     .fldr-icon{
                         list-style-image:url("../../folder-solid (1).svg");
-                        /* list-style-position: inside; */
                     }
                     .share-icon{
                         list-style-image:url("../../share-nodes-solid (2).svg");
-                        /* list-style-position: inside; */
                     }
             }
+
+            /* reused class container, changing the width */
             .container{
                 width: 90%;
-                /* margin-left: 0; */
-                /* margin-bottom: 1.5rem; */
                 .free-trial{
                     width: 100%;
                     padding: .5rem 0;
@@ -350,141 +350,134 @@ main{
                 }
             }
         }
-     } 
+    } 
 
-     #db-partner{
-        .col-4{
-            .card{
-                height: 100%;
-                padding: 3rem .5rem;
-                h3{
-                    line-height: 1.7rem;
-                    font-size: 1.5rem;
-                }
-                p{
-                    padding: 1rem 0;
-                }
-                button{
-                    margin-top: 1rem;
-                    padding: .5rem .75rem;
-                    border: 1px solid black;
-                    background: white;
-                }
-            }
-        }
-     }
-
-     #db-business{
+    #db-partner{
+    .col-4{
         .card{
-            padding: 1rem;
+            height: 100%;
+            padding: 3rem .5rem;
+            h3{
+                line-height: 1.7rem;
+                font-size: 1.5rem;
+            }
             p{
-                padding-top: 1rem;
+                padding: 1rem 0;
             }
-            margin: 2rem 0;
+            button{
+                margin-top: 1rem;
+                padding: .5rem .75rem;
+                border: 1px solid black;
+                background: white;
+            }
         }
-     }
+    }
+    }
 
-     #team-on-dbb{
-         padding-right: 15rem;
+    #db-business{
+    .card{
+        padding: 1rem;
         p{
-            font-size: 3rem;
-            font-weight: 900;
-            padding: 5rem 0;
+            padding-top: 1rem;
         }
-        a{
-            color: var(--btn-color);
-        }
-     }
+        /* margin: 2rem 0; */
+    }
+    }
 
-     #companies{
-         margin-bottom:-1rem;
-        .square{
-            width: 100%;
-            aspect-ratio: 1;
-            padding: 1rem;
-            .container{
-                position: relative;
-                width: 80%;
-                height: 100%;
-                margin: auto;
-                /* background: transparent; */
-            }
-            .company{
-                position: absolute;
-                top:50%;
-                left:0;
-                transform: translate(0,-50%);
-            }
-            &#designit{
-                background: green;
-                border: 1rem solid black;
-            }
-            &#florida-uni{
-                background: #000;
+    #team-on-dbb{
+        padding-right: 15rem;
+    p{
+        font-size: 3rem;
+        font-weight: 900;
+        padding: 5rem 0;
+    }
+    a{
+        color: var(--btn-color);
+    }
+    }
 
-            }
+    #companies{
+        margin-bottom:-1rem;
+    .square{
+        width: 100%;
+        aspect-ratio: 1;
+        padding: 1rem;
+        .container{
+            position: relative;
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            /* background: transparent; */
         }
-        .col-12{
-            margin-top: -1rem;
-            background-color: var(--hero-bg);
-            .card{
-                display: flex;
-                justify-content: space-between;
-                padding: 6rem 0;
-                .left{
-                    width: 50%;
-                }
-                .right{
-                    /* padding: 2rem; */
-                    width: 50%;
-                    text-align: right;
-                    button{
-                        padding: .5rem .75rem;
-                    }
-                }
-                h2{
-                    font-size: 2rem;
-                    padding: 0;
-                }
-            }
+        .company{
+            position: absolute;
+            top:50%;
+            left:0;
+            transform: translate(0,-50%);
         }
-     }
+        &#designit{
+            background: green;
+            border: 1rem solid black;
+        }
+        &#florida-uni{
+            background: #000;
 
-     #questions{
-        h2{
-            font-size: 2rem;
-            padding: 3rem 0;
-            border-bottom: 1px solid black ;
         }
-        .left, .right{
-            font-size: 1.5rem;
-        }
-        .question{
-            border-bottom: 1px solid black ;
-            padding: 3rem 0;
-        }
-        .question{
-            /* padding: 2rem 0; */
-        }
-        .hidden{
-             display: none;
-         }
-        .question:hover {
-            .hidden{
-                padding: 2rem 0;
-                display: block;
+    }
+    .col-12{
+        margin-top: -1rem;
+        background-color: var(--hero-bg);
+        .card{
+            display: flex;
+            justify-content: space-between;
+            padding: 6rem 0;
+            .left{
+                width: 50%;
             }
             .right{
-                rotate: 180deg;
+                /* padding: 2rem; */
+                width: 50%;
+                text-align: right;
+                button{
+                    padding: .5rem .75rem;
+                }
             }
+            /* h2{
+                font-size: 2rem;
+                padding: 0;
+            } */
         }
-            
+    }
+    }
+
+    #questions{
+    
+    .left, .right{
+        font-size: 1.5rem;
+    }
+    .question{
+        /* border-bottom: 1px solid black ; */
+        padding: 3rem 0;
+    }
+    .hidden{
+            display: none;
+        }
+    .question:hover {
+        .hidden{
+            padding: 2rem 0;
+            display: block;
+        }
         .right{
-            float: right;
-            margin-right: 1rem;
+            rotate: 180deg;
         }
-        margin-bottom: 20rem;
-     }
+    }
+        
+    .right{
+        float: right;
+        margin-right: 1rem;
+    }
+    margin-bottom: 20rem;
+    }
 }
 
 /* footer */
@@ -500,16 +493,6 @@ footer{
     }
     .card{
         padding: 3rem 0;
-    }
-    ul{
-        list-style: none;
-        li{
-            padding: .5rem 0;            
-            a{
-                color: white;
-                text-decoration: none;
-            }
-        } 
     }
     .mt-3{
         margin-top: 3rem;
