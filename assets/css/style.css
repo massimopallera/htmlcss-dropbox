@@ -255,7 +255,6 @@ main{
         ul{
             padding-left: 2rem;
         }
-
         .card 
         {
             padding: 1rem;
@@ -293,15 +292,11 @@ main{
             .container{
                 width: 90%;
                 .free-trial{
+                    margin-left: -1rem;
                     width: 100%;
-                    padding: .5rem 0;
-                    background-color: var(--btn-color);
-                    color: var(--lighter);
-                    border: 1px solid var(--btn-color);
                 }
             }
             .buy-now{
-                margin: 1.5rem 0;
                 a{
                     color: var(--btn-color);
                 }
@@ -311,7 +306,7 @@ main{
                 border: .5px solid rgba(0,0,0,0.2);
             }
             .highlight-points{
-                margin: 2rem 0 4rem;
+                margin: 3rem 0 4rem;
                 li{
                     list-style-image: url("../../check-solid (1).svg");
                 }
@@ -320,34 +315,30 @@ main{
 
         .col-12 .card{
             .container{
-                display: flex;
+                /* display: flex; */
                 justify-content: space-between;
-                padding: 2rem 0;
+                /* padding: 2rem 0; */
             }
             .left{
                 width: 60%;
                 .plan-type{
-                    margin-top: 1rem;
-                }.contact-us{
+                    /* margin-top: 1rem; */
+                }
+                .contact-us{
                     padding: .5rem 0;
-                    font-weight: 900;
+                    font-weight: 600;
                     margin-bottom: 2rem;
                 }
-                h3{
-
-                    font-size: 1.5rem;
-                    padding-bottom: .5rem;
-                }
-                }
+            }
             .right{
                 text-align: end;
                 width: 20%;
-                button{
+                /* button{
                     padding: .5rem .75rem;
                     background-color: var(--btn-color);
                     color: var(--lighter);
                     border: 1px solid var(--btn-color);
-                }
+                } */
             }
         }
     } 
