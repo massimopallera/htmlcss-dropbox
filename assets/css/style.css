@@ -348,46 +348,44 @@ main{
         .card{
             height: 100%;
             padding: 3rem .5rem;
-            h3{
-                line-height: 1.7rem;
-                font-size: 1.5rem;
-            }
             p{
-                padding: 1rem 0;
+                padding: 1.5rem 0;
             }
             button{
-                margin-top: 1rem;
-                padding: .5rem .75rem;
                 border: 1px solid black;
-                background: white;
             }
         }
     }
     }
 
     #db-business{
-    .card{
-        padding: 1rem;
-        h3{
-            margin-top: .5rem 0;
+        .col-4{
+            padding-left: 0;
         }
-        p{
-            margin-top: 2rem; 
+        .card{
+
+            padding-right: 2rem;
+            h3{
+                margin-top: .5rem 0;
+            }
+            p{
+                margin-bottom: 2rem; 
+            }
         }
-        /* margin: 2rem 0; */
-    }
     }
 
     #team-on-dbb{
-        padding-right: 15rem;
-    p{
-        font-size: 3rem;
-        font-weight: 900;
-        padding: 5rem 0;
-    }
-    a{
-        color: var(--btn-color);
-    }
+        .container-sm{
+            padding-right: 15rem;
+        }
+        p{
+            font-size: 3rem;
+            font-weight: 900;
+            padding: 5rem 0;
+        }
+        a{
+            color: var(--btn-color);
+        }
     }
 
     #companies{
