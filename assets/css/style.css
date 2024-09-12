@@ -58,16 +58,6 @@ ul{
 /* #endregion common */
 
 
-
-/* padding */
-.py-5{
-    padding: .5rem 0;
-}
-.p_5-75{
-    padding: .5rem .75rem;
-}
-
-
 /* #region debug */
 .debug{
     *:not(header *){
@@ -108,6 +98,13 @@ ul{
 /* #endregion debug */
 
 /* #region utilities */
+.py-5{
+    padding: .5rem 0;
+}
+.p_5-75{
+    padding: .5rem .75rem;
+}
+
 .btn{
     background: var(--btn-color);
     color: var(--lighter);
@@ -232,11 +229,6 @@ header{
 
 }
 
-/* new */
-
-
-
-
 /* main */
 main{
 
@@ -267,6 +259,14 @@ main{
         }
     }
     #business-plans{
+
+        input[type="radio"]{
+            margin-bottom: 3rem;
+        }
+        #annuale{
+            margin-left: 3rem;
+        }
+
         ul{
             padding-left: 2rem;
         }
@@ -329,16 +329,12 @@ main{
         }
 
         .col-12 .card{
+            padding-bottom: 2rem;
             .container{
-                /* display: flex; */
                 justify-content: space-between;
-                /* padding: 2rem 0; */
             }
             .left{
                 width: 60%;
-                .plan-type{
-                    /* margin-top: 1rem; */
-                }
                 .contact-us{
                     padding: .5rem 0;
                     font-weight: 600;
@@ -348,12 +344,6 @@ main{
             .right{
                 text-align: end;
                 width: 20%;
-                /* button{
-                    padding: .5rem .75rem;
-                    background-color: var(--btn-color);
-                    color: var(--lighter);
-                    border: 1px solid var(--btn-color);
-                } */
             }
         }
     } 
@@ -485,8 +475,6 @@ main{
         .col-12{
             .d-flex{
                 align-items: start;
-                /* align-items: center; */
-                vertical-align: middle;
             }    
             h2,button{
                 padding: 0;
@@ -499,8 +487,6 @@ main{
             background-color: var(--hero-bg);
             color: var(--company-color-asu);
             padding: 6rem 0;
-            /* width: 50%; */
-            /* margin: auto; */
             button{
                 padding: .5rem 5rem;
                 color: var(--company-color-asu);
@@ -521,7 +507,6 @@ main{
         font-size: 1.5rem;
     }
     .question{
-        /* border-bottom: 1px solid black ; */
         padding: 3rem 0;
     }
     .hidden{
