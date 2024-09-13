@@ -8,9 +8,6 @@
     font-family: "Schibsted Grotesk", sans-serif;
 }
 
-body{
-    min-width: 1000px;
-}
 img{
     max-width: 100%;
 }
@@ -78,9 +75,9 @@ ul{
     .cta{
         background: red;
     } */
-    .hero{
+    /* .hero{
         background: var(--hero-bg);
-        /* min-height: 50vh; */
+        min-height: 50vh; 
     }
     .container{
         background: rgba(255, 166, 0, 0.705);
@@ -93,7 +90,7 @@ ul{
     }
     .question{
         background: #0000001f;
-    }
+    } */
 }
 /* #endregion debug */
 
@@ -556,4 +553,49 @@ footer{
         padding: 3rem 0 0;
     }
     padding-bottom: 3rem;
+}
+
+
+@media screen and (max-width:1440px) and (min-width: 1050px) {
+    /* .container{
+        min-width: 1050px;
+        max-width: 1300px;
+    } */
+    .container-sm{
+        max-width: 1300px;
+        min-width: 1000px;
+    }
+
+    header{
+        ul{
+            gap:0;
+        }
+    }
+
+    main{
+
+    #hero{
+        .col-4 .card{
+            *{
+                margin-top: 0;
+            }
+        }
+        .hero-arrow, .undo{
+            display: none;
+        }
+    }
+
+        #companies .big-sq{
+            padding: 1rem .75rem;
+            p{
+                font-size: 13px;
+                /* margin-top: 2rem; */
+            }
+            .divider{
+                margin: 1.5rem 0;
+            }
+
+        }
+    }
+    
 }
