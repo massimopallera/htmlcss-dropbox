@@ -225,6 +225,9 @@ header{
     li:hover{
         border-bottom: 3px solid black;
     }
+    .menu-icon{
+        display: none;
+    }
 
 }
 
@@ -583,7 +586,7 @@ footer{
         .hero-arrow, .undo{
             display: none;
         }
-    }
+     }
 
         #companies .big-sq{
             padding: 1rem .75rem;
@@ -598,4 +601,24 @@ footer{
         }
     }
     
+}
+
+@media screen and (max-width: 1050px){
+    header{
+        .left, .right{
+            display: none;
+        }
+        .menu-icon{
+            display: inline;
+        }
+        .d-flex{
+            justify-content: space-between;
+            padding: .5rem;
+        }
+        span{
+            .menu-icon{
+                margin-right: 1rem;
+            }
+        }
+    }
 }
