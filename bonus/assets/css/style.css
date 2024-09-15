@@ -329,6 +329,9 @@ main{
                     list-style-image: url("../img/check-solid.svg");
                 }
             }
+            .lap-hidden{
+                display: none;
+            }
         }
 
         .col-12 .card{
@@ -620,5 +623,39 @@ footer{
                 margin-right: 1rem;
             }
         }
+    }
+    main{
+        #business-plans{
+            .row{
+                flex-wrap: wrap;
+            }
+            .col-lg-6{
+                width: 50%;
+                &:last-child{
+                    margin-top:0;
+                    .d-flex{
+                        display: block;
+                    }
+                    .left, .right{
+                        width: 100%;
+                    }
+                }
+            }
+            .col-12.col-lg-6 .card{
+                .right{
+                    text-align: left;
+                }
+                .lap-hidden{
+                    display: block;
+                }
+            }
+
+        }
+        #companies{
+            p,.author, .divider{
+                display: none;
+            }
+        }
+
     }
 }
